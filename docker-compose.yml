@@ -5,4 +5,4 @@ services:
     ports:
       - "8080:8081"
     environment:
-      - ENV_VAR=value
+      - spring.profiles.active=value
