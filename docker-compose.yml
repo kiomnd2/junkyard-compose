@@ -5,4 +5,4 @@ services:
     ports:
       - "38080:38080"
     environment:
-      - spring.profiles.active=value
+      - spring.profiles.active=dev
