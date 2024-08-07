@@ -6,3 +6,10 @@ services:
       - "38080:38080"
     environment:
       - spring.profiles.active=dev
+
+  frontend:
+    image: localhost:5000/junkyard-frontend:latest
+    ports:
+      - "30000:3000"
+    environment:
+      BACKEND_API_URL: http://localhost:38080/v1/api
