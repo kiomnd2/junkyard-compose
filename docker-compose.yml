@@ -12,4 +12,4 @@ services:
     ports:
       - "30000:3000"
     environment:
-      BACKEND_API_URL: http://3.35.254.168:38080/v1/api
+      BACKEND_API_URL: http://module1:38080/v1/api
