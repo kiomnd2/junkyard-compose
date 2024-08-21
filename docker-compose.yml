@@ -13,3 +13,4 @@ services:
       - "30000:3000"
     environment:
       BACKEND_API_URL: http://module1:38080/v1/api
+      DATA_ENCRYPTION_KEY: ${FRONTEND_ENCRYPTION_KEY}
