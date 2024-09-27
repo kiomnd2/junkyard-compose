@@ -1,7 +1,7 @@
 version: '3'
 services:
   module1:
-    image: localhost:5000/junkward-app-internal-api:latest
+    image: localhost:5000/junkyard-app-internal-api:latest
     ports:
       - "38080:38080"
     environment:
