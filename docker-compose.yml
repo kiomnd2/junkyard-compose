@@ -1,5 +1,12 @@
 version: '3'
 services:
+  message_server:
+    image: localhost:5000/junkyard-telegram-server:latest
+    ports:
+      - "38081:38081"
+    environment:
+      - spring.profiles.active=dev
+
   module1:
     image: localhost:5000/junkyard-app-internal-api:latest
     ports:
